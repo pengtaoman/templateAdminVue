@@ -1,8 +1,9 @@
 import request from '@/utils/request'
 
 export function login(username, password) {
+  console.log('########## login executed ##########');
   return request({
-    url: '/user/login',
+    url: '/web/auth',
     method: 'post',
     data: {
       username,

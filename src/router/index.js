@@ -135,6 +135,15 @@ export const constantRouterMap = [
 
 export default new Router({
   // mode: 'history', //后端支持可开
+
+  /**
+   * scrollBehavior 方法接收 to 和 from 路由对象。
+   * 第三个参数 savedPosition 当且仅当 popstate 导航 (通过浏览器的 前进/后退 按钮触发) 时才可用
+   * 这个方法返回滚动位置的对象信息
+   * { x: number, y: number }
+   *
+   * () => ({ y: 0 }) 导航后页面滚回顶部
+   * */
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRouterMap
 })

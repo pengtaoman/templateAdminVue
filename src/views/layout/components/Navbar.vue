@@ -4,7 +4,8 @@
     <breadcrumb />
     <el-dropdown class="avatar-container" trigger="click">
       <div class="avatar-wrapper">
-        <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">
+        <!--<img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">-->
+        <img src="@/assets/avatar/logo.png?imageView2/1/w/60/h/60" class="user-avatar">
         <i class="el-icon-caret-bottom"/>
       </div>
       <el-dropdown-menu slot="dropdown" class="user-dropdown">
@@ -79,7 +80,7 @@ export default {
       .user-avatar {
         width: 40px;
         height: 40px;
-        border-radius: 10px;
+        border-radius: 0px;
       }
       .el-icon-caret-bottom {
         position: absolute;

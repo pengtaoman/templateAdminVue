@@ -1,6 +1,7 @@
 <template>
   <div :class="classObj" class="app-wrapper">
     <div v-if="device==='mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside"/>
+
     <sidebar class="sidebar-container"/>
     <div class="main-container">
       <navbar/>
@@ -58,7 +59,7 @@ export default {
     }
   }
   .drawer-bg {
-    background: #000;
+    background: #fff;
     opacity: 0.3;
     width: 100%;
     top: 0;

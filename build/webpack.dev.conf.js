@@ -16,6 +16,8 @@ function resolve(dir) {
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+console.log('####### config : ' + JSON.stringify(config));
+
 const devWebpackConfig = merge(baseWebpackConfig, {
   mode: 'development',
   module: {

@@ -10,6 +10,7 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
@@ -23,6 +24,9 @@ export default {
   },
   created() {
     this.getBreadcrumb()
+  },
+  mounted() {
+
   },
   methods: {
     getBreadcrumb() {

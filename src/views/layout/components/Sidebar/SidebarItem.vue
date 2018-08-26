@@ -38,6 +38,8 @@
 <script>
 import path from 'path'
 
+console.log(path)
+
 export default {
   name: 'SidebarItem',
   props: {

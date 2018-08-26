@@ -17,6 +17,8 @@ import '@/permission' // permission control
 
 Vue.use(ElementUI, { locale })
 
+
+//来关闭生产模式下给出的提示
 Vue.config.productionTip = false
 
 new Vue({
